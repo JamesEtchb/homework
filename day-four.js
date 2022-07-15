@@ -79,10 +79,19 @@ let arr = [1, 2, 3, 4, 5, 6]
 let minNum = 0
 let maxNum = 0
 for (let h = 0; h < arr.length; h++) {
-    minNum = Math.min(h)
+  minNum = Math.min(h)
 }
 for (let k = 0; k < arr.length; k++) {
-    maxNum = Math.max(k)
+  maxNum = Math.max(k)
 }
 
 console.log(minNum, maxNum)
+
+function getMin() {
+    for (let l = 0; l <arr.length; l++){
+        return arr.sort()
+    } for (let p = 0; p = 1; p++){
+        return arr[0]
+    }
+}
+console.log(getMin())
