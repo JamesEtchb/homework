@@ -43,6 +43,8 @@ const testArray = [
   true,
   false,
 ]
+
+
 let total = 0
 for (let i = 0; i < testArray.length; i++) {
   if (testArray[i] === true) {
@@ -63,15 +65,16 @@ console.log(upCase("third test"))
 //4
 let twoPoint = [2, 2, 2, 2, 2, 2, 2]
 let threePoint = [3, 3, 3, 3, 3, 3]
-let finalScore = 0
-for (let i = 0; i < twoPoint.length; i++) {
-  finalScore = finalScore + twoPoint[i]
+let totalScore = 0
+function finalScore() {
+  for (let i = 0; i < twoPoint.length; i++) {
+    totalScore =  totalScore + twoPoint[i]
+  }
+  for (let j = 0; j < threePoint.length; j++) {
+    totalScore = totalScore + threePoint[j]
+  }
 }
-for (let j = 0; j < threePoint.length; j++) {
-  finalScore = finalScore + threePoint[j]
-}
-
-console.log(finalScore)
+console.log(totalScore)
 
 //5
 
@@ -88,10 +91,11 @@ for (let k = 0; k < arr.length; k++) {
 console.log(minNum, maxNum)
 
 function getMin() {
-    for (let l = 0; l <arr.length; l++){
-        return arr.sort()
-    } for (let p = 0; p = 1; p++){
-        return arr[0]
-    }
+  for (let l = 0; l < arr.length; l++) {
+    return arr.sort()
+  }
+  for (let p = 0; (p = 1); p++) {
+    return arr[0]
+  }
 }
 console.log(getMin())
