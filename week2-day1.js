@@ -17,25 +17,28 @@ function calculation(x, y) {
 
 console.log(calculation(5, 5))
 
-// let testArr = [1, 2, 3, 4, 5]
-// let testStr = "test"
+let testArr = [1, 2, 3, 4, 5]
+let testStr = "test"
 
-// function findStr(arr, str) {
-//     let makeArray = str.split('')
-//     let joined = arr.push(makeArray)
-//     let reversedArray = joined.reverse()
-//     return reversedArray[0]
-// }
+function findStr(arr, str) {
+    let firstArr = arr
+    let joinedArr = firstArr.unshift(str)
+    return joinedArr[0]
+}
 
-// console.log(findStr(testArr, testStr))
+
+
+console.log(findStr(testArr, testStr))
 
 
 let testArray = [1,2,"test", true]
 
 function findTypeOf(typeArray) {
+  let findType = []
   for (let i = 0; i < typeArray.length; i++) {
-        console.log(typeof(i))
+    findType.push(typeof typeArray[i])
   }
+  console.log(findType)
 }
 
 findTypeOf(testArray)
